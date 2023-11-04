@@ -4,22 +4,24 @@
 
 body {
     margin: 0;
+    position: relative;
 }
 
 .container {
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 16px;
-    grid-template-rows: 62px auto 192px 192px 192px 192px 269px;
+    grid-template-columns: 35px 1fr 1fr 35px;
+    grid-template-rows: 62px auto 48px 192px 192px 192px 48px 192px 269px;
     grid-template-areas: 
-    "header header"
-    "main main"
-    "content-one content-two"
-    "content-three content-four"
-    "content-five content-six"
-    "content-category-action content-category-adventure"
-    "footer footer"
+    ". header header ."
+    ". main main ."
+    ". featured-games featured-games ."
+    ". content-one content-two ."
+    ". content-three content-four ."
+    ". content-five content-six ."
+    ". categories-text categories-text ."
+    "arrow-left content-category-action content-category-adventure arrow-right"
+    "footer footer footer footer"
     ;
 }
 
@@ -38,32 +40,12 @@ main img {
 
 footer {
     grid-area: footer;
-    background-color: brown;
 }
 
 .sidebar {
     grid-area: sidebar;
     background-color: red;
     display: none;
-}
-
-.action img, .adventure img {
-    opacity: 0.2;
-}
-
-.layer-action {
-    display: flex;
-    grid-area: content-category-action;
-    background: #000;
-    width: 172px;
-    height: 192px;
-}
-
-.layer-adventure {
-    grid-area: content-category-adventure;
-    background: #000;
-    width: 172px;
-    height: 192px;
 }
 
 .games img {
@@ -109,6 +91,99 @@ footer {
     grid-area: content-six;
 }
 
+.category-action {
+    grid-area: content-category-action;
+}
+
+.category-adventure {
+    grid-area: content-category-adventure;
+}
+
+.category-text {
+    grid-area: categories-text;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.featured-games-text {
+    grid-area: featured-games;
+    display: flex;
+    align-items: center;
+}
+
+.featured-games-text h2, .category-text h2 {
+    font-family: 'Gill Sans ultra bold', 'inter';
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 1.25px;
+    color: #fff;
+    text-align: left;
+    margin: 0;
+}
+
+.category-text p {
+    font-family: 'Gill Sans ultra bold', 'inter';
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 1.25px;
+    color: #fff;
+    text-align: left;
+    margin: 0;
+}
+
+.category-action, .category-adventure {
+    position: relative;
+}
+
+.category-action .arrow, .category-adventure .arrow{
+    width: 7px;
+    height: 21px;
+    position: absolute;
+    left: 0;
+}
+
+.category-action p, .category-adventure p {
+    position: absolute;
+    z-index: 1;
+    margin: auto auto;
+    align-self: center;
+    font-family: 'gill-sans-ultra-bold-regular', sans-serif;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 1.25px;
+}
+
+.layer {
+    position: absolute;
+    width: 172px;
+    height: 192px;
+    background: #000;
+    opacity: 0.8;
+}
+
+.arrow-left {
+    grid-area: arrow-left;
+}
+
+.arrow-right {
+    grid-area: arrow-right;
+}
+
+.arrow-right, .arrow-left {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-right img, .arrow-left img {
+    height: 30px;
+}
+
 @media only screen and (min-width:640px) {
     .container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -122,7 +197,7 @@ footer {
         column-gap: 0.2rem;
         row-gap: 0.2rem;
     }
-    #sidebar {
+    .sidebar {
         display: block;
         }
 }
