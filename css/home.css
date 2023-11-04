@@ -6,6 +6,8 @@ body {
     margin: 0;
     position: relative;
     width: 100vw;
+    justify-content: center;
+    display: flex;
 }
 
 .container {
@@ -47,10 +49,8 @@ footer {
 .sidebar {
     grid-area: sidebar;
     display: none;
-    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
     color: #fff;
     background-color: #222;
     width: 180px;
@@ -101,6 +101,26 @@ footer {
 
 .content-six {
     grid-area: content-six;
+}
+
+.content-seven {
+    grid-area: content-seven;
+    display: none;
+}
+
+.content-eight {
+    grid-area: content-eight;
+    display: none;
+}
+
+.content-nine {
+    grid-area: content-nine;
+    display: none;
+}
+
+.content-ten {
+    grid-area: content-ten;
+    display: none;
 }
 
 .category-action {
@@ -230,26 +250,33 @@ footer {
         ". header header header header ."
         ". sidebar main main content-six ."
         ". sidebar main main content-three ."
-        ". sidebar main main content-four ."
-        ". sidebar . . content-five ."
+        ". sidebar content-seven content-eight content-four ."
+        ". sidebar content-nine content-ten content-five ."
         "footer footer footer footer footer footer"
         ;
         column-gap: 0.2rem;
-        row-gap: 0.2rem;
+        row-gap: 16px;
         max-width: 100vw;
     }
     .sidebar {
-        width: 300px;
+        width: 100%;
+        max-width: 300px;
+        display: flex;
     }
     .featured-games-text, .category-text, .arrow-left, .arrow-right, .category-action, .category-adventure, .content-one, .content-two {
         display: none;
     }
+    .content-seven, .content-eight, .content-nine, .content-ten {
+        display: grid;
+    }
+
     main {
         width: 100%;
         height: 100%;
     }
     main img {
         max-width: 100%;
+        object-position: center;
     }
 }
 
