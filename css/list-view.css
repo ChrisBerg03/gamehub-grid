@@ -9,7 +9,7 @@ header {
 .list-view {
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: flex-end;
     margin: 8px 35px 8px 0;
 }
 
