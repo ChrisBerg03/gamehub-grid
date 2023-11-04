@@ -95,3 +95,30 @@ footer {
     letter-spacing: 4%;
     padding-top: 10px;
 }
+
+@media only screen and (min-width:640px) {
+    
+    .total-bottom {
+        display: none;
+    }
+    footer {
+        height: 229px;
+    }
+}
+/*Large screens*/
+@media (min-width: 990px) {
+    header {
+        max-height: 100px;
+    }
+
+    .burger-menu img, .search img {
+        height: 50px;
+    }
+
+    .logo img {
+        height: 100px;
+    }
+}
+/*Extra Large screens*/
+@media (min-width: 1280px) {
+}
