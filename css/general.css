@@ -4,6 +4,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    grid-area: header;
 }
 
 .burger-menu, .search {
@@ -60,12 +61,11 @@ footer {
 .total-bottom {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    justify-content:space-between;
+    width: 100vw;
+    justify-content:space-evenly;
     align-items: center;
     background-color: #222;
     height: 65px;
-    padding: 0 35px 0 35px;
     position: fixed;
     bottom: 0;
     color: #fff;
