@@ -1,0 +1,136 @@
+* {
+    color: #fff;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main h3 {
+    margin: 24px 35px 0 35px;
+}
+
+main h3:nth-child(2) {
+    margin-bottom: 24px;
+}
+
+.main-shopping-container {
+    background-color: #1B203D;
+    width: 360px;
+    height: 209px;
+    margin: 0 8px 0 8px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.shopping-cart-text {
+    background-image: linear-gradient(rgba(26, 57, 57, 0.7), rgba(27, 32, 61, 1));
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 360px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 27px;
+}
+
+.shopping-cart-text h2 {
+    font-size: 16px;
+    font-family: 'roboto';
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+
+.shopping-alignment {
+    margin: 0 27px 0 27px;
+    position: relative;
+}
+
+.game-purchase {
+    display: flex;
+    flex-direction: row;
+    margin: 16px 0 16px 0;
+    align-items: center;
+}
+
+.game-purchase img {
+    width: 86px;
+    height: 48px;
+}
+
+.game-purchase h4 {
+    margin: 0;
+    padding-left: 24px;
+    font-size: 12px;
+    font-family: 'inter';
+    font-weight: 400;
+}
+
+.game-purchase p {
+    position: absolute;
+    right: 0;
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+    background-color: #1A2B39;
+}
+
+button {
+    background-color: #59BF40;
+    border: none;
+    border-radius: 2px;
+    font-family: 'roboto';
+    font-size: 16px;
+    letter-spacing: .5px;
+    text-align: center;
+    font-weight: 500;
+    width: 174px;
+    height: 41px;
+    word-break: break-all;
+    margin-left: 35px;
+    margin-top: 24px;
+}
+
+.receipt {
+    margin: 64px 35px 0 35px;
+    background-color: #252525;
+    height: 221px;
+    width: 360px;
+}
+
+.receipt h4 {
+    margin: 0 0 16px 0;
+    font-size: 24px;
+    font-family: 'roboto';
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+
+.receipt .receipt-text {
+    margin: 0 16px 0 16px;
+    background-color: #252525;
+    padding-top: 16px;
+
+}
+
+.receipt .receipt-text p {
+    margin: 0;
+    letter-spacing: 0.2px;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.receipt-text p:nth-child(3) {
+    margin: 8px 0 8px 0;
+}
+.receipt-text p:nth-child(4) {
+    margin-top: 16px;
+}

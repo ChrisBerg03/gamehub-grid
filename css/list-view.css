@@ -2,10 +2,6 @@ body {
     margin: 0;
 }
 
-header {
-    margin: 0 35px 0 35px;
-}
-
 .list-view {
     display: flex;
     flex-direction: row;
