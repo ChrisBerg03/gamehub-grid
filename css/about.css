@@ -1,0 +1,55 @@
+* {
+    color: #fff;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    margin: 24px 35px 0 35px;
+    font-size: 14px;
+    font-family: 'roboto';
+    display: flex;
+    flex-direction: column;
+
+}
+
+main h5 {
+    margin: 0;
+}
+
+main p {
+    margin-top: 6px;
+}
+
+main div {
+    margin-top: 24px;
+}
+
+main button {
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+main button a {
+    text-decoration: none;
+}
+
+@media only screen and (min-width:640px) {
+    
+}
+
+/*Large screens*/
+@media only screen and (min-width: 900px) {
+    main h5 {
+        font-size: 16px;
+    }
+}
+
+/*Extra Large screens*/
+@media (min-width: 1280px) {
+
+}
