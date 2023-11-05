@@ -9,6 +9,7 @@ header {
     justify-content: space-between;
     align-items: center;
     grid-area: header;
+    margin: 0 35px 0 35px;
 }
 
 .burger-menu, .search {
