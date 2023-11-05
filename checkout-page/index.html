@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gamehub | Checkout</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/css/checkout-page.css" />
+        <link rel="stylesheet" href="/css/general.css" />
+        <script
+            src="https://kit.fontawesome.com/1c8aded1d1.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <div class="container">
+        <header>
+            <div class="burger-menu">
+                <a>
+                    <img
+                    src="/assets/svgs/burger-menu.svg"
+                    alt="burger menu"
+                /></a>
+                    
+            </div>
+            <div class="logo">
+                <a href="/index.html">
+                    <img
+                        src="/assets/svgs/logo.svg"
+                        alt="Logo displaying gamehub, the universe of games"
+                    />
+                </a>
+            </div>
+            <div class="search">
+                <a>
+                    <img
+                        src="/assets/svgs/search.svg"
+                        alt="search icon"
+                    />
+                </a>
+        </header>
+        <main>
+            <div class="main-shopping-container">
+                <div class="shopping-cart-text">
+                    <h2>Your Shopping Cart</h2>
+                </div>
+                <div class="shopping-alignment">
+                    <div class="game-purchase">
+                        <img src="/assets/images/starfield.jpg" />
+                        <h4>Starfield</h4>
+                        <p>$69,99</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="game-purchase">
+                        <img src="/assets/images/starfield.jpg" />
+                        <h4>Starfield</h4>
+                        <p>$17,99</p>
+                    </div>
+                    <div class="line"></div>
+
+                    <div class="form-container">
+                        <div class="payment-method">    
+                            <p>Payment method</p>
+                            <img src="/assets/svgs/arrow-down.svg" />
+                        </div>
+                        <form>
+                            <input
+                                class="all-inputs"
+                                type="text"
+                                id="fname"
+                                name="firstname"
+                                placeholder="First name"
+                            />
+
+                            <input
+                                class="all-inputs"
+                                type="text"
+                                id="lname"
+                                name="lastname"
+                                placeholder="Last name"
+                            />
+
+                            <input
+                                class="all-inputs"
+                                type="tel"
+                                id="ccn"
+                                name="creditcard"
+                                inputmode="numeric"
+                                maxlength="19"
+                                autocomplete="cc-number"
+                                placeholder="Card number"
+                            />
+
+                            <input
+                                class="all-inputs"
+                                type="text"
+                                id="exp-date-mm"
+                                placeholder="MM"
+                                maxlength="2"
+                            />
+
+                            <input
+                                class="all-inputs"
+                                type="text"
+                                id="exp-date-yy"
+                                placeholder="YY"
+                                maxlength="4"
+                            />
+
+                            <input
+                                class="all-inputs"
+                                type="password"
+                                id="cvv"
+                                placeholder="CVV"
+                                maxlength="4"
+                            />
+
+                            <input
+                                class="all-inputs"
+                                type="text"
+                                id="billing-address"
+                                name="address"
+                                placeholder="Billing-Address"
+                            />
+
+                            <input
+                                class="all-inputs"
+                                type="text"
+                                id="city"
+                                name="city"
+                                autocomplete="address-line1"
+                                placeholder="City"
+                            />
+
+                            <input
+                                class="all-inputs"
+                                type="text"
+                                id="zip"
+                                name="zip"
+                                placeholder="Zip"
+                            />
+
+                            <input
+                                class="all-inputs"
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Email"
+                            />
+                        </form>
+                    </div>
+                    <div class="purchase-btn">
+                        <div class="color-wrap">
+                            <p>$87,98</p>
+                            <a href="/checkout-success/index.html"><button>Purchase</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featured-games-container">
+                <div class="related-games">
+                    <h3>Related items</h3>
+                </div>
+                <div class="list-games">
+                    <div class="featured-games game-one"></div>
+                    <div class="list-games-text">
+                        <h2>Cyberpunk</h2>
+                        <p class="game-categories">
+                            Single player-Action-Horror-Exploration
+                        </p>
+                        <div class="review-aside">
+                            <div>
+                                <p>12.433 Reviews</p>
+                            </div>
+                            <div class="thumb-aside">
+                                <p>
+                                    87% Positive
+                                    <img src="/assets/svg/good.svg" />
+                                </p>
+
+                                <p>
+                                    13% Negative
+                                    <img src="/assets/svg/bad.svg" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-games">
+                    <div class="featured-games game-two"></div>
+                    <div class="list-games-text">
+                        <h2>Racing</h2>
+                        <p class="game-categories">
+                            Single player-Action-Horror-Exploration
+                        </p>
+                        <div class="review-aside">
+                            <div>
+                                <p>12.433 Reviews</p>
+                            </div>
+                            <div class="thumb-aside">
+                                <p>
+                                    87% Positive
+                                    <img src="/assets/svg/good.svg" />
+                                </p>
+
+                                <p>
+                                    13% Negative
+                                    <img src="/assets/svg/bad.svg" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-games">
+                    <div class="featured-games game-three"></div>
+                    <div class="list-games-text">
+                        <h2>Boxer</h2>
+                        <p class="game-categories">
+                            Single player-Action-Horror-Exploration
+                        </p>
+                        <div class="review-aside">
+                            <div>
+                                <p>12.433 Reviews</p>
+                            </div>
+                            <div class="thumb-aside">
+                                <p>
+                                    87% Positive
+                                    <img src="/assets/svg/good.svg" />
+                                </p>
+
+                                <p>
+                                    13% Negative
+                                    <img src="/assets/svg/bad.svg" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-games">
+                    <div class="featured-games game-four"></div>
+                    <div class="list-games-text">
+                        <h2>Space war</h2>
+                        <p class="game-categories">
+                            Single player-Action-Horror-Exploration
+                        </p>
+                        <div class="review-aside">
+                            <div>
+                                <p>12.433 Reviews</p>
+                            </div>
+                            <div class="thumb-aside">
+                                <p>
+                                    87% Positive
+                                    <img src="/assets/svg/good.svg" />
+                                </p>
+
+                                <p>
+                                    13% Negative
+                                    <img src="/assets/svg/bad.svg" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-games">
+                    <div class="featured-games game-five"></div>
+                    <div class="list-games-text">
+                        <h2>Assassin</h2>
+                        <p class="game-categories">
+                            Single player-Action-Horror-Exploration
+                        </p>
+                        <div class="review-aside">
+                            <div>
+                                <p>12.433 Reviews</p>
+                            </div>
+                            <div class="thumb-aside">
+                                <p>
+                                    87% Positive
+                                    <img src="/assets/svg/good.svg" />
+                                </p>
+
+                                <p>
+                                    13% Negative
+                                    <img src="/assets/svg/bad.svg" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-games">
+                    <div class="featured-games game-six"></div>
+                    <div class="list-games-text">
+                        <h2>Black</h2>
+                        <p class="game-categories">
+                            Single player-Action-Horror-Exploration
+                        </p>
+                        <div class="review-aside">
+                            <div>
+                                <p>12.433 Reviews</p>
+                            </div>
+                            <div class="thumb-aside">
+                                <p>
+                                    87% Positive
+                                    <img src="/assets/svg/good.svg" />
+                                </p>
+
+                                <p>
+                                    13% Negative
+                                    <img src="/assets/svg/bad.svg" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="bottom-info">
+                <a href="/about/index.html"> <p>Support</p> </a>
+                <a href="/about/index.html"> <p>About us</p> </a>
+                <a href="/about/index.html"> <p>Cookies</p> </a>
+                <a href="/about/index.html"> <p>Blog</p> </a>
+                <span><hr class="hr-line" /></span>
+            </div>
+            <ul class="bottom-socials">
+                <li class="social-space">
+                    <i class="fa-brands fa-facebook-f fa-2xl"></i>
+                </li>
+                <li class="social-space">
+                    <i class="fa-brands fa-twitter fa-2xl"></i>
+                </li>
+                <li class="social-space">
+                    <i class="fa-brands fa-pinterest-p fa-2xl"></i>
+                </li>
+                <li class="social-space">
+                    <i class="fa-brands fa-instagram fa-2xl"></i>
+                </li>
+                <li class="social-space">
+                    <i class="fa-brands fa-youtube fa-2xl"></i>
+                </li>
+                <li class="social-space">
+                    <i class="fa-brands fa-tiktok fa-2xl"></i>
+                </li>
+            </ul>
+        </footer>
+        <nav class="total-bottom">
+            <div class="nav-under">
+                <a href="/index.html">
+                    <i class="fa-solid fa-house fa-2xl"></i>
+                    <h2>Home</h2></a
+                >
+            </div>
+            <div class="nav-under">
+                <a href="/checkout-page/index.html">
+                    <i
+                        class="fa-solid fa-scroll fa-flip-horizontal fa-2xl"
+                    ></i>
+                    <h2>Order</h2></a
+                >
+            </div>
+            <div class="nav-under">
+                <a href="#">
+                    <i class="fa-regular fa-bell fa-2xl"></i>
+                    <h2>News</h2></a
+                >
+            </div>
+            <div class="nav-under">
+                <a href="#">
+                    <i class="fa-regular fa-user fa-2xl"></i>
+                    <h2>Profile</h2></a
+                >
+            </div>
+        </nav>
+    </div>
+</html>
