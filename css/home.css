@@ -60,6 +60,12 @@ footer {
     left: 35px;
 }
 
+.sidebar a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+
 .games img {
     width: 172px;
     height: 192px;
